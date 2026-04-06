@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bếp Cô Beu - Đồ ăn nhà làm</title>
+  <meta name="description" content="Bếp Cô Beu - Website giới thiệu món ăn nhà làm, đặt hàng nhanh qua Zalo." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Bếp Cô Beu</a>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Đồ ăn nhà làm mỗi ngày</span>
+          <h1>Món ngon chuẩn vị nhà làm, đặt nhanh qua Zalo</h1>
+          <p>Bếp Cô Beu chuyên các món ăn tiện lợi, sạch sẽ, đóng gói đẹp mắt. Khách xem sản phẩm trên web và nhấn Zalo để đặt món trực tiếp.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="san-pham.html">Xem sản phẩm</a>
+            <a class="btn btn-outline" href="https://zalo.me/0900000000" target="_blank" rel="noopener">Nhắn Zalo ngay</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Mẫu website phù hợp cho bạn</h3>
+          <ul>
+            <li>Không cần giỏ hàng, không cần thanh toán online</li>
+            <li>Chỉ cần trưng bày món ăn đẹp, rõ giá</li>
+            <li>Mỗi sản phẩm có nút hỏi/đặt qua Zalo</li>
+            <li>Chạy tốt trên Netlify</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Sản phẩm nổi bật</p>
+            <h2>Món được khách hỏi nhiều</h2>
+          </div>
+          <a class="text-link" href="san-pham.html">Xem tất cả</a>
+        </div>
+        <div id="featured-products" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container feature-grid">
+        <div class="feature-box">
+          <h3>Nguyên liệu rõ ràng</h3>
+          <p>Mô tả từng món, cách dùng và bảo quản rõ ràng để khách dễ chọn.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Dễ cập nhật</h3>
+          <p>Chỉ cần sửa dữ liệu sản phẩm trong file JS là web tự hiện lại nội dung mới.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Tập trung chốt đơn</h3>
+          <p>Mọi nút đặt hàng đều dẫn sang Zalo để bạn tư vấn và nhận đơn nhanh.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Bếp Cô Beu</h3>
+        <p>Web mẫu giới thiệu món ăn nhà làm, tối ưu để khách xem nhanh và đặt qua Zalo.</p>
+      </div>
+      <div>
+        <h4>Điều hướng</h4>
+        <a href="index.html">Trang chủ</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Zalo: 0900 000 000</p>
+        <p>Hotline: 0900 000 000</p>
+        <p>Địa chỉ: Bạn thay địa chỉ thật ở đây</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-zalo" href="https://zalo.me/0900000000" target="_blank" rel="noopener">Zalo</a>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
