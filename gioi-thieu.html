@@ -1,40 +1,50 @@
-const products = [
-  {
-    id: 1,
-    name: 'Nem chua đặc biệt',
-    price: '65.000đ / hộp',
-    category: 'Món ăn vặt',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80',
-    description: 'Nem chua vị truyền thống, dễ ăn, phù hợp ăn vặt hoặc biếu tặng.',
-    zaloMessage: 'Em muốn đặt Nem chua đặc biệt bên Bếp Cô Beu.'
-  },
-  {
-    id: 2,
-    name: 'Chả lụa lá chuối',
-    price: '120.000đ / cây',
-    category: 'Món truyền thống',
-    image: 'https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=900&q=80',
-    description: 'Chả lụa dai vừa, thơm nhẹ, hợp ăn sáng hoặc dùng trong mâm cơm gia đình.',
-    zaloMessage: 'Em muốn hỏi giá Chả lụa lá chuối bên Bếp Cô Beu.'
-  },
-  {
-    id: 3,
-    name: 'Khô gà lá chanh',
-    price: '89.000đ / hũ',
-    category: 'Ăn vặt',
-    image: 'https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=900&q=80',
-    description: 'Khô gà sợi tơi, cay nhẹ, thơm mùi lá chanh, đóng hũ tiện bảo quản.',
-    zaloMessage: 'Em muốn đặt Khô gà lá chanh bên Bếp Cô Beu.'
-  },
-  {
-    id: 4,
-    name: 'Muối chấm hải sản',
-    price: '35.000đ / hũ',
-    category: 'Gia vị',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80',
-    description: 'Muối chấm chua cay mặn ngọt hài hòa, hợp chấm trái cây hoặc hải sản.',
-    zaloMessage: 'Em muốn đặt Muối chấm hải sản bên Bếp Cô Beu.'
-  }
-];
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới thiệu - Bếp Cô Beu</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Bếp Cô Beu</a>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="gioi-thieu.html" class="active">Giới thiệu</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
 
-const zaloPhone = '0900000000';
+  <main class="section">
+    <div class="container content-page">
+      <p class="eyebrow">Câu chuyện thương hiệu</p>
+      <h1>Về Bếp Cô Beu</h1>
+      <p>Bếp Cô Beu là mẫu nội dung để bạn thay thế bằng câu chuyện thật của thương hiệu: món ăn nhà làm, nguyên liệu chọn lọc, làm mới mỗi ngày và giao khách nhanh chóng.</p>
+      <p>Bạn có thể sửa trang này để thêm ảnh thật, quy trình chế biến, phản hồi khách hàng và thông tin tạo niềm tin.</p>
+      <div class="info-card">
+        <h3>Gợi ý nội dung nên thêm</h3>
+        <ul>
+          <li>Ảnh bếp thật hoặc ảnh đóng gói thật</li>
+          <li>Cam kết nguyên liệu và bảo quản</li>
+          <li>Khu vực giao hàng</li>
+          <li>Thời gian nhận đơn qua Zalo</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Bếp Cô Beu</h3><p>Website trưng bày món ăn và chốt đơn qua Zalo.</p></div>
+      <div><h4>Điều hướng</h4><a href="index.html">Trang chủ</a><a href="san-pham.html">Sản phẩm</a><a href="lien-he.html">Liên hệ</a></div>
+      <div><h4>Zalo</h4><p>0900 000 000</p></div>
+    </div>
+  </footer>
+
+  <a class="floating-zalo" href="https://zalo.me/0900000000" target="_blank" rel="noopener">Zalo</a>
+</body>
+</html>

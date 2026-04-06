@@ -1,29 +1,50 @@
-function buildZaloLink(message) {
-  return `https://zalo.me/${zaloPhone}?text=${encodeURIComponent(message)}`;
-}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên hệ - Bếp Cô Beu</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Bếp Cô Beu</a>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lien-he.html" class="active">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
 
-function productCard(product) {
-  return `
-    <article class="product-card">
-      <img src="${product.image}" alt="${product.name}" class="product-image" />
-      <div class="product-body">
-        <span class="pill">${product.category}</span>
-        <h3>${product.name}</h3>
-        <p class="price">${product.price}</p>
-        <p>${product.description}</p>
-        <div class="card-actions">
-          <a class="btn btn-primary" href="${buildZaloLink(product.zaloMessage)}" target="_blank" rel="noopener">Đặt qua Zalo</a>
-        </div>
+  <main class="section">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow">Liên hệ đặt món</p>
+        <h1>Khách xem web, bạn chốt đơn qua Zalo</h1>
+        <p>Chỉ cần thay số điện thoại và link Zalo thật của bạn vào toàn bộ project là dùng được.</p>
       </div>
-    </article>
-  `;
-}
+      <div class="info-card">
+        <h3>Thông tin liên hệ</h3>
+        <p><strong>Zalo:</strong> 0900 000 000</p>
+        <p><strong>Hotline:</strong> 0900 000 000</p>
+        <p><strong>Facebook:</strong> fb.com/bepcobeu</p>
+        <p><strong>Địa chỉ:</strong> Bạn thay địa chỉ tại đây</p>
+        <a class="btn btn-primary full" href="https://zalo.me/0900000000" target="_blank" rel="noopener">Nhắn Zalo để đặt món</a>
+      </div>
+    </div>
+  </main>
 
-function renderProducts(targetId, items) {
-  const target = document.getElementById(targetId);
-  if (!target) return;
-  target.innerHTML = items.map(productCard).join('');
-}
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Bếp Cô Beu</h3><p>Website trưng bày món ăn và chốt đơn qua Zalo.</p></div>
+      <div><h4>Điều hướng</h4><a href="index.html">Trang chủ</a><a href="san-pham.html">Sản phẩm</a><a href="gioi-thieu.html">Giới thiệu</a></div>
+      <div><h4>Zalo</h4><p>0900 000 000</p></div>
+    </div>
+  </footer>
 
-renderProducts('featured-products', products.slice(0, 3));
-renderProducts('all-products', products);
+  <a class="floating-zalo" href="https://zalo.me/0900000000" target="_blank" rel="noopener">Zalo</a>
+</body>
+</html>
